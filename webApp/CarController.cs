@@ -8,16 +8,17 @@ using System.Web.Http;
 namespace webApp
 {
     public class Car
-        {
-            public int ID { get; set; }
-            public string Make { get; set; }
-            public string Model { get; set; }
-        }
-    
+    {
+        public int ID { get; set; }
+        public string Make { get; set; }
+        public string Model { get; set; }
+    }
+
     public class CarController : ApiController
     {
-        public IEnumerable<string> Get()
+        public string Get()
         {
             return "Ford";
         }
+    }
 }
